@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 15px;
+    overflow: hidden;
+    
+}
+
+.imagem {
+    max-width: 100%;
+    height: auto;
+}
+
+.menuitem a:hover, .menuitem:hover .dropbutton {
+    background-color: #555555;
+    color: #FFFFFF;
+    }
+
+.dropcontent {
+    display: none;
+    position: absolute;
+    background-color: #EEE;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }

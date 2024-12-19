@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flamengo</title>
+    <link rel="stylesheet" href="XXXXXX.css">
+</head>
+
+<body>
+    <header>
+        <h1>Clube de Regatas Flamengo</h1>
+        <nav>
+            <ul>
+                <li><a href="historia.html">Início no Futebol</a></li>
+                <li><a href="momentos.html">Gols Históricos</a></li>
+                <li><a href="redessociais.html">Redes Sociais</a></li>
+                <li><a href="index.html">Elenco em 2024</a></li>
+                <li><a href="anoatual.html">Ano 2024</a></li>
+                <li><a href="transferencias.html">Transferências 2024</a></li>
+                <li><a href="sobre.html">Sobre o Site</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Campeonatos em disputa:</h2>
+        
+                <div class="container">
+                    <img src="img/carioca.jpg" alt="Campeonato Carioca" class="imagem" width="170" height="120">
+                    <p><b>Campeonato Carioca</b></p>
+                </div>
+            
+           
+                <div class="container">
+                    <img src="IMG/Brasileirão.png" alt="Campeonato Brasileiro" class="imagem" width="100" height="120">
+                   <p><b>Campeonato Brasileiro</b></p>
+                </div>
+            
+                <div class="container">
+                    <img src="img/copa do brasil.png" alt="Copa do Brasil" class="imagem" width="110" height="90">
+                   <p><b>Copa do Brasil</b></p>
+                </div>
+           
+                <div class="container">
+                    <img src="img/libertadores.jpg" alt="Libertadores" class="imagem" width="130" height="120">
+                   <p><b>Copa Libertadores</b></p>
+                </div>
+            
+        <h4>Escolha um Campeonato</h4>
+        <select id="campeonatoSelect">
+            <option value="carioca.html">Carioca</option>
+            <option value="partidas.html">Brasileirão</option>
+            <option value="copadobrasil.html">Copa do Brasil</option>
+            <option value="tabelalibertadores.html">Libertadores</option>
+        </select>
+        <button onclick="IrPara()">Selecione</button>
+    
+        <script>
+            function IrPara() {
+                var select = document.getElementById('campeonatoSelect');
+                var url = select.value;
+                location.assign(url);
+            }
+
+            </script>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            Site Criado Por Vinicius, Rian e Murilo
+        </div>
+    </footer>
+    
+</body>
+
+</html>
